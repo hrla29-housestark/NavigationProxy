@@ -1,0 +1,35 @@
+const express = require('express');
+const proxy = require('http-proxy-middleware')
+const bodyParser = require('body-parser')
+const request = require('request')
+const path = require('path')
+
+const app = express();
+const port = 3000;
+const router = express.Router();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(express.static(path.join(__dirname, '../client/static')))
+
+app.use('/api', proxy({
+    target: 'localhost:3000',
+    router: {
+        '/nav': 'http://localhost:3001',
+        '/products': 'http://localhost:1000',
+        '/products/:productID': 'http://localhost:1000',
+
+
+    },
+    changeOrigin: true
+}))
+app.use('/', proxy({
+    target: 'localhost:3000',
+    router: {
+        '/ratings': 'http://localhost:3003',
+        '/reviews': 'http://localhost:3003'
+    },
+    changeOrigin: true
+}))
+
+app.listen(port, () => console.log(`Succesfully listening port ${port}`))

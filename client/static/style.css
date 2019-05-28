@@ -1,0 +1,16 @@
+.navigation {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.crousel {
+    position: absolute;
+    top:120px;
+}
+.reviews {
+    position: absolute;
+    top:800px;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
