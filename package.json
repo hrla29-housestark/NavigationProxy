@@ -1,0 +1,28 @@
+{
+  "name": "navigationproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufukmehmetoglu/NavigationProxy.git"
+  },
+  "author": "ufukmehmetoglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ufukmehmetoglu/NavigationProxy/issues"
+  },
+  "homepage": "https://github.com/ufukmehmetoglu/NavigationProxy#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.19.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  }
+}
