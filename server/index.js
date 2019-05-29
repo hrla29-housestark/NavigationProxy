@@ -18,8 +18,7 @@ app.use('/api', proxy({
         '/nav': 'http://localhost:3001',
         '/products': 'http://localhost:1000',
         '/products/:productID': 'http://localhost:1000',
-
-
+        '/productDetails/:' : 'http://localhost:3004',
     },
     changeOrigin: true
 }))
