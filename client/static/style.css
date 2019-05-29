@@ -6,11 +6,42 @@
 .crousel {
     position: absolute;
     top:120px;
+    width: 100%;
+}
+.productDetails {
+    position: absolute;
+    top:800px;
+    width: 100%;
 }
 .reviews {
     position: absolute;
-    top:800px;
+    top:2000px;
     width: 100%;
     margin-left: 40px;
     margin-right: 40px;
 }
+
+@font-face {
+    font-family: 'AdineuePRO';
+    src: url('./fonts/adineuePRO-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adineuebold';
+    src: url('./fonts/adineuePRO-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'AdihausDIN';
+    src: url('./fonts/AdihausDIN-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adihausbold';
+    src: url('./fonts/AdihausDIN-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
