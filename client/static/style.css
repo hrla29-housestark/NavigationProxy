@@ -11,11 +11,12 @@
 .productDetails {
     position: absolute;
     top:800px;
-    width: 100%;
+    margin-left: 220px;
+    width: 80%;
 }
 .reviews {
     position: absolute;
-    top:2000px;
+    top:2300px;
     width: 100%;
     margin-left: 40px;
     margin-right: 40px;
