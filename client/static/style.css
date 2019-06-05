@@ -1,16 +1,240 @@
 .navigation {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 .crousel {
-    position: absolute;
+    position: relative;
     top:120px;
+    width: 100%;
+}
+.productDetails {
+    position: relative;
+    top: 120px;
+    margin-left: 100px;
+    width: 80%;
 }
 .reviews {
-    position: absolute;
-    top:800px;
-    width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    position: relative;
+    top: 200px;
+    margin-left: 80px;
+    margin-right: 200px;
 }
+.otherAlsoBought {
+    position: relative;
+    top: 250px;
+    width: 100%;
+    margin-left: 100px;
+    width: 80%;
+}
+
+.footer-html{
+  position: relative;
+  top: 120px;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+}
+.email-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #ede734;
+  height: 125px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.sign-up-text{
+  font-family: 'adineuePROBold';
+  text-align: left;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+.email-enter{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+}
+
+.enter-button{
+  height: 54px;
+  width: 54px;
+  color: white;
+  background-color: black;
+  border-width: 1px;
+  border-color: black;
+}
+
+.arrow{
+  margin: auto;
+  padding-top: 10px;
+  height: 34px;
+  width: 34px;
+}
+
+.input{
+  font-size: 16px;
+  height: 50px;
+  width: 300px;
+  border-width: 1px;
+  font-family: 'AdihauseDINRegular';
+  padding-left: 15px;
+  color: grey;
+  border-color: black;
+}
+
+.links-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.links-column{
+  border-width: 1px;
+  border-color: black;
+  text-align: left;
+}
+
+.list-header{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: 'adineuePROBold';
+  letter-spacing: 2px;
+}
+
+.list-item{
+  font-family: 'AdihauseDINRegular';
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 40px;
+  color: rgb(151, 150, 150);;
+  border-width: 1px;
+  background-color: #363738;
+}
+
+.america{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  border-right-width: 1px;
+  color: rgb(151, 150, 150);
+}
+
+.flag{
+  margin: 0px 8px 0px 0px;
+  height: 25px;
+  width: 25px;
+}
+
+.usa-text{
+  font-family: 'AdihauseDINRegular';
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.footer-text{
+  font-family: 'AdihauseDINRegular';
+  font-size: 13px;
+  margin: auto auto auto 0;
+  text-align: left;
+}
+
+.border{
+  margin-right: 20px;
+}
+
+
+@font-face {
+    font-family: 'AdineuePRO';
+    src: url('./fonts/adineuePRO-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adineuebold';
+    src: url('./fonts/adineuePRO-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'AdihausDIN';
+    src: url('./fonts/AdihausDIN-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adihausbold';
+    src: url('./fonts/AdihausDIN-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  /* @font-face {
+    font-family: 'adineue-light';
+    src: url('./fonts/adineue-light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'adineuePROKZ-Black';
+    src: url('./fonts/adineuePROKZ-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'adineuePROKZ-Bold';
+    src: url('./fonts/adineuePROKZ-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'adineuePROKZ-Light';
+    src: url('./fonts/adineuePROKZ-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'adineuePROKZ-Light';
+    src: url('./fonts/adineuePROKZ-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'adineuePROTT-Black';
+    src: url('./fonts/adineuePROTT-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'texgyreadventor-regular';
+    src: url('./fonts/texgyreadventor-regular.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  } */
